@@ -10,3 +10,77 @@
   body {
     font-family: 'Roboto', sans-serif;
   }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+  /* Définir La Hauteur De La Section Principale */
+  main {
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+  }
+  /* Masquer La Barre De Défilement */
+  .side-bar {
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    overflow-y: hidden;
+} 
+/* Ajoutez Des Requêtes Multimédias Pour Plus De Réactivité */
+@media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+  }
+  /* Stylisez La Section De Gauche */
+  .left {
+    display: flex;
+    align-items: center;
+   }
+   
+   .left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+   }
+   /* Stylisez La Section Centrale Et Sa Forme */
+   .search {
+    display: flex;
+   }
+   
+   .search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+   }
+   /* Stylisez L'entrée Dans Le Formulaire De Recherche */
+   .search input {
+    width: 600px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+  /* Stylisez Les Icônes/Boutons De Recherche Et De Micro */
+  .search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+  }
+  
+  .mic {
+    margin-top: 10px;
+  }
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
